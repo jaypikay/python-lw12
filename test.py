@@ -11,11 +11,6 @@ time.sleep(.500)
 print('[+] LW12 LIGHT ON')
 lw12.light_on()
 time.sleep(.500)
-print('[+] LW12_EFFECT_STATIC')
-for effect in LW12_EFFECT_STATIC:
-    print('    {}'.format(effect))
-    lw12.set_effect(effect)
-    time.sleep(.250)
 print('[+] LW12_LIGHT.BRIGHTNESS')
 for brightness in range(0, 101, 5):
     print('    brightness={}'.format(brightness))
@@ -24,22 +19,12 @@ for brightness in range(0, 101, 5):
 print('[+] LW12_LIGHT.FLASH')
 print('    speed=100')
 lw12.set_light_option(LW12_LIGHT.FLASH, 100)
-print('[+] LW12_EFFECT_JUMP')
-for effect in LW12_EFFECT_JUMP:
+print('[+] LW12_EFFECT')
+for effect in LW12_EFFECT:
     print('    {}'.format(effect))
     lw12.set_effect(effect)
     time.sleep(2)
-print('[+] LW12_EFFECT_FLASH')
-for effect in LW12_EFFECT_FLASH:
-    print('    {}'.format(effect))
-    lw12.set_effect(effect)
-    time.sleep(2)
-print('[+] LW12_EFFECT_GRADIENT')
-for effect in LW12_EFFECT_GRADIENT:
-    print('    {}'.format(effect))
-    lw12.set_effect(effect)
-    time.sleep(2)
-lw12.set_effect(LW12_EFFECT_STATIC.PURPLE)
+lw12.set_effect(LW12_EFFECT.PURPLE)
 lw12.set_light_option(LW12_LIGHT.BRIGHTNESS, 10)
 print('[+] LW12 SCAN')
 lw12.scan()

@@ -51,45 +51,36 @@ class LW12_POWER(Enum):
     IGNORE      = b'\xff'
 
 
-class LW12_EFFECT_STATIC(Enum):
-    RED         = b'\x80'
-    BLUE        = b'\x81'
-    GREEN       = b'\x82'
-    CYAN        = b'\x83'
-    YELLOW      = b'\x84'
-    PURPLE      = b'\x85'
-    WHITE       = b'\x86'
-
-
-class LW12_EFFECT_JUMP(Enum):
-    TRICOLOR    = b'\x87'
-    SEVENCOLOR  = b'\x88'
-
-
-class LW12_EFFECT_GRADIENT(Enum):
-    TRICOLOR    = b'\x89'
-    SEVENCOLOR  = b'\x8a'
-    RED         = b'\x8b'
-    GREEN       = b'\x8c'
-    BLUE        = b'\x8d'
-    YELLOW      = b'\x8e'
-    CYAN        = b'\x8f'
-    PURPLE      = b'\x90'
-    WHITE       = b'\x91'
-    RED_GREEN   = b'\x92'
-    RED_BLUE    = b'\x93'
-    GREEN_BLUE  = b'\x94'
-
-
-class LW12_EFFECT_FLASH(Enum):
-    SEVENCOLOR  = b'\x95'
-    RED         = b'\x96'
-    GREEN       = b'\x97'
-    BLUE        = b'\x98'
-    YELLOW      = b'\x99'
-    CYAN        = b'\x9a'
-    PURPLE      = b'\x9b'
-    WHITE       = b'\x9c'
+class LW12_EFFECT(Enum):
+    STATIC_RED          = b'\x80'
+    STATIC_BLUE         = b'\x81'
+    STATIC_GREEN        = b'\x82'
+    STATIC_CYAN         = b'\x83'
+    STATIC_YELLOW       = b'\x84'
+    STATIC_PURPLE       = b'\x85'
+    STATIC_WHITE        = b'\x86'
+    JUMP_TRICOLOR       = b'\x87'
+    JUMP_SEVENCOLOR     = b'\x88'
+    GRADIENT_TRICOLOR   = b'\x89'
+    GRADIENT_SEVENCOLOR = b'\x8a'
+    GRADIENT_RED        = b'\x8b'
+    GRADIENT_GREEN      = b'\x8c'
+    GRADIENT_BLUE       = b'\x8d'
+    GRADIENT_YELLOW     = b'\x8e'
+    GRADIENT_CYAN       = b'\x8f'
+    GRADIENT_PURPLE     = b'\x90'
+    GRADIENT_WHITE      = b'\x91'
+    GRADIENT_RED_GREEN  = b'\x92'
+    GRADIENT_RED_BLUE   = b'\x93'
+    GRADIENT_GREEN_BLUE = b'\x94'
+    FLASH_SEVENCOLOR    = b'\x95'
+    FLASH_RED           = b'\x96'
+    FLASH_GREEN         = b'\x97'
+    FLASH_BLUE          = b'\x98'
+    FLASH_YELLOW        = b'\x99'
+    FLASH_CYAN          = b'\x9a'
+    FLASH_PURPLE        = b'\x9b'
+    FLASH_WHITE         = b'\x9c'
 
 
 class Color(object):
