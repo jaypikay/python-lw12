@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lw12',
-    version='0.9.1',
+    version='0.9.2',
     description='Library to control the Lagute LW-12 WiFi LED controller.',
     url='https://github.com/jaypikay/python-lw12',
     author='Julian Knauer',
